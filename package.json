@@ -1,0 +1,16 @@
+{
+  "name": "vals_shadowrun_roller",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "eslint": "^7.19.0",
+    "prettier": "^2.2.1"
+  }
+}
