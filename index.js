@@ -35,3 +35,5 @@ client.on("message", (message) => {
 });
 
 client.login(token);
+
+//node index.js to run
