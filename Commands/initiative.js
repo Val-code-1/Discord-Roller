@@ -22,11 +22,10 @@ module.exports = {
           "We don't believe your dex or wits to be that high. If they are congratulations, you win the fight."
         );
       }
-      return message.channel.send(
-        `Dex: ${dex} + Wits: ${wits} + ${message.author}'s roll: ${roll} = ${
-          dex + wits + roll
-        }`
-      );
+      return message.channel.send([
+        `${message.author} rolled: ${roll}.`,
+        `INITIATIVE  TOTAL: ${dex + wits + roll}`,
+      ]);
     }
   },
 };
