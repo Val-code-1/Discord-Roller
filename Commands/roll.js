@@ -18,6 +18,9 @@ module.exports = {
       let rerollDice = 0;
       let rerollResultMSG = [];
       let rerollSuccesses = 0;
+      if (amount > 25) {
+        return message.channel.send("Please select 25 dice or less per roll.");
+      }
       for (let i = 0; i < amount; i++) {
         let random = Math.random();
         let result = Math.floor(random * 10 + 1);
@@ -107,7 +110,15 @@ function formatMSG(unsortedArray, difficulty) {
 //         }
 //       }
 //       rerollResultMSG.push(result);
+//       if (rerollDice > 0) {
+//         explodingDice(
+//           rerollDice,
+//           difficulty,
+//           specialty,
+//           rerollSuccesses,
+//           rerollResultMSG
+//         );
+//       }
 //     }
 //   }
-//   explodingDice();
 // }

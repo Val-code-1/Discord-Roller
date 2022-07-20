@@ -12,5 +12,6 @@ module.exports = {
     message.channel.send(
       "Ex: ~r 10 6 would be a roll of 10 dice at difficulty 6 with no specialty."
     );
+    message.channel.send("Now featuring ~i for initiative rolls! ~i (dex) (wits)");
   },
 };
