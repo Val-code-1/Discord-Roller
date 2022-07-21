@@ -11,7 +11,7 @@ module.exports = {
     }
     if (args[0]) {
       let amount = parseInt(args[0]);
-      let difficulty = args[1];
+      let difficulty = args[1] !== undefined ? args[1] : 6;
       let specialty = args[2];
       let resultMSG = [];
       let successes = 0;
@@ -51,6 +51,8 @@ module.exports = {
           rerollResultMSG.push(result);
         }
       }
+
+      // explodingDice(rerollDice, difficulty, specialty, rerollSuccesses, rerollResultMSG);
 
       let cleanMSG = formatMSG(resultMSG, difficulty);
 
